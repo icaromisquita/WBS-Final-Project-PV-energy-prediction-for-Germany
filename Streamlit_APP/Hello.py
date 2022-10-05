@@ -21,5 +21,5 @@ st.markdown(
     """
 )
 
-Pv_mount_image = Image.open('./img/solar_mount-removebg-preview.png')
+Pv_mount_image = Image.open('Streamlit_APP/img/solar_mount-removebg-preview.png')
 st.image(Pv_mount_image, caption='**Elevated mounting systems for pitched roofs.')
