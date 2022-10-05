@@ -30,14 +30,14 @@ st.write("""
 st.write("""##### It is provided a collection of pre-trained models, please feel free to choose the one that better fits your needs""")
 import pickle
 import pandas as pd
-model1 = pickle.load(open('./data/model1_berlin10peak.sav', 'rb'))
-model2 = pickle.load(open('./data/model2_berlin20peak.sav', 'rb'))
-model3 = pickle.load(open('./data/model3_hamburg10peak.sav', 'rb'))
-model4 = pickle.load(open('./data/model4_hamburg20peak.sav', 'rb'))
-model5 = pickle.load(open('./data/model5_munich10peak.sav', 'rb'))
-model6 = pickle.load(open('./data/model6_munich20peak.sav', 'rb'))
-model7 = pickle.load(open('./data/model7_cologne10peak.sav', 'rb'))
-model8 = pickle.load(open('./data/model8_cologne20peak.sav', 'rb'))
+model1 = pickle.load(open('Streamlit_APP/data/model1_berlin10peak.sav', 'rb'))
+model2 = pickle.load(open('Streamlit_APP/data/model2_berlin20peak.sav', 'rb'))
+model3 = pickle.load(open('Streamlit_APP/data/model3_hamburg10peak.sav', 'rb'))
+model4 = pickle.load(open('Streamlit_APP/data/model4_hamburg20peak.sav', 'rb'))
+model5 = pickle.load(open('Streamlit_APP/data/model5_munich10peak.sav', 'rb'))
+model6 = pickle.load(open('Streamlit_APP/data/model6_munich20peak.sav', 'rb'))
+model7 = pickle.load(open('Streamlit_APP/data/model7_cologne10peak.sav', 'rb'))
+model8 = pickle.load(open('Streamlit_APP/data/model8_cologne20peak.sav', 'rb'))
 
 ### Model selection
 
@@ -54,9 +54,9 @@ models = [model1, model2, model3, model4, model5, model6, model7, model8]
 
 models_choice = st.radio("Model Selector", (1, 2,3,4,5,6,7,8), format_func=lambda x: mapping[x])
 ###
-pv_dfbase = pd.read_csv("./data/pv_final_cleaned.csv") 
+pv_dfbase = pd.read_csv("Streamlit_APP/data/pv_final_cleaned.csv") 
 pv_dfbase.rename(columns={"IR(h)":"IR_h"}, inplace=True)
-base_df = pd.read_csv("./data/pv_final_cleaned.csv") 
+base_df = pd.read_csv("Streamlit_APP/data/pv_final_cleaned.csv") 
 
 st.write("""For a prediction for more days, please upload a ".csv" file bellow, following the "pvbase.csv" provided on the bottom of the page""")
 
@@ -108,7 +108,7 @@ if st.button("⚡Make a prediction⚡", key=None, help="On click makes a predict
     
 
 from PIL import Image
-image = Image.open('./img/logo-removebg-preview.png')
+image = Image.open('Streamlit_APP/img/logo-removebg-preview.png')
 
 st.image(image, caption='PV module representation')
 
