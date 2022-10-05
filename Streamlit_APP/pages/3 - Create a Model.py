@@ -13,23 +13,12 @@ import pvlib
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-
-
 import pickle
 import pandas as pd
 
-#Model_1 = pickle.load(open('./data/Pv_linearmodel.sav', 'rb'))
-#Model_2 = pickle.load(open('./data/Pv_RamdForReg_model.sav', 'rb'))
-
-pv_dfbase = pd.read_csv("./data/pv_final_cleaned.csv") 
+pv_dfbase = pd.read_csv("Streamlit_APP/data/pv_final_cleaned.csv") 
 pv_dfbase.rename(columns={"IR(h)":"IR_h"}, inplace=True)
-base_df = pd.read_csv("./data/pv_final_cleaned.csv") 
-
-st.write("""For a prediction for more days,please upload a ".csv" file, 
-        following the pvbase.csv provided on the bottom of the page""")
-
-#st.write("""Model 1 - trained for Berlin with a PV system with 30KWp""")
-#models= st.selectbox('Select a pre trained ML', index= 0, options=["Model_1"],key="models", help="Pre-trained Machine Learning models")
+base_df = pd.read_csv("Streamlit_APP/data/pv_final_cleaned.csv") 
 
 ######## END OF PRE TRAINED MODELS
 
