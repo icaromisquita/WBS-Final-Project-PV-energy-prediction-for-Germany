@@ -18,7 +18,7 @@ pv_dfbase.rename(columns={"IR(h)":"IR_h"}, inplace=True)
 
 # Initiating the input variables
 
-input_df = pd.read_csv("https://raw.githubusercontent.com/icaromisquita/WBS-Final-Project-/main/pv_base.csv")
+input_df = pd.read_csv("./data/pv_base.csv")
 
 st.write("""#### Please write all inputs as a decimal number.""")
 

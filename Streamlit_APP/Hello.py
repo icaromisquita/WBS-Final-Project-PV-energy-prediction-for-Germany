@@ -12,8 +12,6 @@ st.sidebar.success("🌞 Select the desired function 🌞")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects. \n
     **👈 Select the desired function from the sidebar** to see what this APP can do!
     
     ### API dataset sources used in this APP.\n
