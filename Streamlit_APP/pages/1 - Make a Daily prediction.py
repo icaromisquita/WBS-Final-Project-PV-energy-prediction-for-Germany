@@ -12,13 +12,13 @@ st.write("\n")
 
 import pickle
 import pandas as pd
-model1 = pickle.load(open('./data/model1_berlin10peak.sav', 'rb'))
-pv_dfbase = pd.read_csv("./data/pv_final_cleaned.csv") 
+model1 = pickle.load(open('Streamlit_APP/data/model1_berlin10peak.sav', 'rb'))
+pv_dfbase = pd.read_csv("Streamlit_APP/data/pv_final_cleaned.csv") 
 pv_dfbase.rename(columns={"IR(h)":"IR_h"}, inplace=True)
 
 # Initiating the input variables
 
-input_df = pd.read_csv("./data/pv_base.csv")
+input_df = pd.read_csv("Streamlit_APP/data/pv_base.csv")
 
 st.write("""#### Please write all inputs as a decimal number.""")
 
@@ -78,6 +78,6 @@ if st.button("⚡Click to predict⚡", key=None, help="On click makes a predicti
     st.write("Source: [Destatis](https://www.destatis.de/EN/Themes/Society-Environment/Environment/Material-Energy-Flows/Tables/electricity-consumption-households.html)")
     
 from PIL import Image
-image = Image.open('./img/PvParameter-removebg-preview.png')
+image = Image.open('Streamlit_APP/img/PvParameter-removebg-preview.png')
 
 st.image(image, caption='Some solar parameters')
