@@ -17,7 +17,7 @@ st.markdown(
     ### API dataset sources used in this APP.\n
     🔹 PVLIB [documentation](https://pvlib-python.readthedocs.io/en/stable/index.html)\n
     🔹 PVGIS [documentation](https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system_en)\n
-    🔹 Link with the the project code [GitHub](https://github.com/icaromisquita/WBS-Final-Project-)\n
+    🔹 Link with the the project code [GitHub](https://github.com/icaromisquita/WBS-Final-Project-PV-energy-prediction-for-Germany)\n
     """
 )
 
