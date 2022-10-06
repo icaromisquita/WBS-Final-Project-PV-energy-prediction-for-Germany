@@ -7,3 +7,6 @@ Libraries used
 PVLib, Pandas, MatplotLib, SciKit-learn and Numpy.
 
 Link to the deployed App: https://icaromisquita-wbs-final-project-pv-en-streamlit-apphello-39bkci.streamlitapp.com/
+
+Initiated on: 19/09 
+Finished on: 06/10
